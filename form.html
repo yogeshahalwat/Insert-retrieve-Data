@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" type=text/css href="style.css"> 
+</head>
+
+<style>
+    *{
+    padding:0px;
+    margin:0px
+}
+
+ .container{ 
+    padding:100px,auto; 
+    background-color: rgb(253, 158, 34);
+     display: flex; 
+     flex-direction: column; 
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+     width: 100%;
+   
+    
+    
+ } 
+
+#name{
+    padding:6px 8px;
+    border-radius: 11px;
+    
+
+}
+#email{
+    padding:3px;
+    border-radius: 8px;
+
+}
+#dob{
+    padding:10px;
+    border-radius: 8px;
+
+}
+#gender{
+    padding:10px;
+    
+
+}
+#address{
+    padding:10px;
+    border-radius: 8px;
+
+}
+
+
+</style> 
+
+<body>
+    
+        <form class="container" action="/" method="post">
+           
+            <div id="name" >
+                <label for ="name">Name :</label>
+                <input type="text" id="name" name="name"><br>
+
+            </div>
+          
+            <div id="email">
+                <label for ="email">Email :</label>
+                <input type="email" id="email" name="email"><br>
+                
+            </div> 
+          
+            <div id="dob">
+                <label for="dob">DOB :</label>
+                <input type="date" id="dob" name="dob"><br>
+
+            </div>
+          
+            <div id="gender">
+
+                <label for="gender">Gender :</label>
+                <input type="checkbox" name="gender" value="male"> Male <input type="checkbox" name="gender" value="female"> Female
+            </div>
+          
+            <div id="address">
+                <label for="address">Address:</label>
+                <textarea  name="address" id="address" ></textarea>
+            </div>
+            
+                <button>Subbmit</button>
+            
+        </form>
+      
+                
+
+</body>
+</html>
+        
+        
+        
+        
+    
+    
